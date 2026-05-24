@@ -10,4 +10,4 @@ Recommended GitHub Pages settings:
 
 Primary URL after GitHub Pages is enabled:
 
-`https://pungpung22.github.io/lastcrown-policy/privacy.html`
+`https://pungpung22.github.io/lastcrownpolicy/privacy.html`
