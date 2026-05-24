@@ -128,13 +128,14 @@
       <h3>제3자 서비스</h3>
       <p>
         LastCrown은 광고, 인앱 구매, 플랫폼 서비스, 게임 배포를 위해 제3자 서비스를 사용할 수 있습니다.
-        이러한 서비스는 각자의 정책과 사용자의 기기 설정에 따라 기기 식별자, 광고 식별자, 구매 정보,
+        이러한 서비스는 각자의 정책과 사용자의 기기 설정에 따라 기기 식별자, 광고 식별자, Firebase 설치 ID, 구매 정보,
         진단 정보 또는 이용 정보를 처리할 수 있습니다.
       </p>
       <ul>
         <li>Google Play Billing: Android 인앱 구매 처리</li>
         <li>Apple App Store / StoreKit: iOS 인앱 구매 처리</li>
         <li>Google Mobile Ads / AdMob: 선택형 보상형 광고 및 기타 광고 제공</li>
+        <li>Firebase Remote Config / Firebase Installations: 앱 설정값, 기능 플래그, 운영 메시지 제공</li>
         <li>Unity 서비스 및 Unity 런타임 구성 요소: 게임 운영 및 플랫폼 연동</li>
         <li>Google Play, Apple, Android, iOS 플랫폼 서비스: 설치된 빌드 운영에 필요한 서비스</li>
       </ul>
@@ -219,7 +220,7 @@
       <h3>Third-Party Services</h3>
       <p>
         LastCrown uses third-party services for ads, in-app purchases, platform services, and game
-        distribution. These services may process device identifiers, advertising identifiers, purchase
+        distribution. These services may process device identifiers, advertising identifiers, Firebase installation ID, purchase
         information, diagnostics, or usage information according to their own policies and your device
         settings.
       </p>
@@ -227,6 +228,7 @@
         <li>Google Play Billing, for Android in-app purchases.</li>
         <li>Apple App Store / StoreKit, for iOS in-app purchases.</li>
         <li>Google Mobile Ads / AdMob, for optional rewarded ads and other ads.</li>
+        <li>Firebase Remote Config / Firebase Installations, for app settings, feature flags, and operational messages.</li>
         <li>Unity services and Unity runtime components, for game operation and platform integration.</li>
         <li>Google Play, Apple, Android, and iOS platform services required by the installed build.</li>
       </ul>
@@ -316,12 +318,13 @@
       <p>
         LastCrownは、広告、アプリ内購入、プラットフォームサービス、ゲーム配信のために第三者サービスを
         使用する場合があります。これらのサービスは、それぞれのポリシーおよび利用者の端末設定に従って、
-        端末識別子、広告識別子、購入情報、診断情報、または利用情報を処理する場合があります。
+        端末識別子、広告識別子、FirebaseインストールID、購入情報、診断情報、または利用情報を処理する場合があります。
       </p>
       <ul>
         <li>Google Play Billing: Androidのアプリ内購入処理</li>
         <li>Apple App Store / StoreKit: iOSのアプリ内購入処理</li>
         <li>Google Mobile Ads / AdMob: 任意のリワード広告およびその他の広告提供</li>
+        <li>Firebase Remote Config / Firebase Installations: アプリ設定、機能フラグ、運営メッセージの提供</li>
         <li>UnityサービスおよびUnityランタイム構成要素: ゲーム運用およびプラットフォーム連携</li>
         <li>Google Play、Apple、Android、iOSのプラットフォームサービス: インストールされたビルドの運用に必要なサービス</li>
       </ul>
@@ -388,6 +391,7 @@
       <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
       <li><a href="https://policies.google.com/technologies/ads">Google Advertising Privacy &amp; Terms</a></li>
       <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure guidance</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
       <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></li>
       <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
     </ul>
