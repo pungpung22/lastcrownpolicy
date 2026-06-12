@@ -96,7 +96,7 @@
 <body>
   <main>
     <h1>LastCrown Privacy Policy</h1>
-    <p class="muted">Last updated: May 24, 2026</p>
+    <p class="muted">Last updated: June 12, 2026</p>
 
     <nav class="lang-nav" aria-label="Language">
       <a href="#ko">한국어</a>
@@ -134,14 +134,17 @@
       <h3>제3자 서비스</h3>
       <p>
         LastCrown은 광고, 인앱 구매, 플랫폼 서비스, 게임 배포를 위해 제3자 서비스를 사용할 수 있습니다.
-        이러한 서비스는 각자의 정책과 사용자의 기기 설정에 따라 기기 식별자, 광고 식별자, Firebase 설치 ID, 구매 정보,
-        진단 정보 또는 이용 정보를 처리할 수 있습니다.
+        이러한 서비스는 각자의 정책과 사용자의 기기 설정에 따라 기기 식별자, 광고 식별자, Firebase 설치 ID,
+        구매 정보, 진단 정보 또는 이용 정보를 처리할 수 있습니다.
       </p>
       <ul>
         <li>Google Play Billing: Android 인앱 구매 처리</li>
         <li>Apple App Store / StoreKit: iOS 인앱 구매 처리</li>
         <li>Google Mobile Ads / AdMob: 선택형 보상형 광고 및 기타 광고 제공</li>
+        <li>Google User Messaging Platform: 광고 동의 및 개인정보 선택지 안내 지원</li>
+        <li>Unity Ads mediation: AdMob 미디에이션을 통한 광고 제공 지원</li>
         <li>Firebase Remote Config / Firebase Installations: 앱 설정값, 기능 플래그, 광고 제한, 보상 설정, 운영 메시지 제공</li>
+        <li>Firebase Analytics / Google Analytics for Firebase: 앱 사용 및 운영 지표 측정(활성화된 경우)</li>
         <li>Firebase Crashlytics: 충돌 및 오류 진단</li>
         <li>Unity 서비스 및 Unity 런타임 구성 요소: 게임 운영 및 플랫폼 연동</li>
         <li>Google Play, Apple, Android, iOS 플랫폼 서비스: 설치된 빌드 운영에 필요한 서비스</li>
@@ -239,15 +242,18 @@
       <h3>Third-Party Services</h3>
       <p>
         LastCrown uses third-party services for ads, in-app purchases, platform services, and game
-        distribution. These services may process device identifiers, advertising identifiers, Firebase installation ID, purchase
-        information, diagnostics, or usage information according to their own policies and your device
-        settings.
+        distribution. These services may process device identifiers, advertising identifiers, Firebase
+        installation ID, purchase information, diagnostics, or usage information according to their
+        own policies and your device settings.
       </p>
       <ul>
         <li>Google Play Billing, for Android in-app purchases.</li>
         <li>Apple App Store / StoreKit, for iOS in-app purchases.</li>
         <li>Google Mobile Ads / AdMob, for optional rewarded ads and other ads.</li>
+        <li>Google User Messaging Platform, for ad consent and privacy choice notices.</li>
+        <li>Unity Ads mediation, for ad delivery through AdMob mediation.</li>
         <li>Firebase Remote Config / Firebase Installations, for app settings, feature flags, ad limits, reward settings, and operational messages.</li>
+        <li>Firebase Analytics / Google Analytics for Firebase, for app usage and operational measurement where enabled.</li>
         <li>Firebase Crashlytics, for crash and error diagnostics.</li>
         <li>Unity services and Unity runtime components, for game operation and platform integration.</li>
         <li>Google Play, Apple, Android, and iOS platform services required by the installed build.</li>
@@ -332,6 +338,12 @@
         記載されている開発者サポート連絡先からご連絡ください。個人情報に関する依頼を公開コミュニティ
         チャンネルに投稿しないでください。
       </p>
+      <p>
+        アカウント削除またはデータ削除を希望する場合は、依頼内容とアプリ名 LastCrown を含めて
+        <a href="mailto:pung0805@gmail.com">pung0805@gmail.com</a> までメールでご連絡ください。
+        LastCrownはアプリ内アカウント作成を提供していないため、個別のアカウント退会手続きは
+        ありません。依頼を受け取った後、開発者が管理可能なデータの削除方法を案内します。
+      </p>
 
       <h3>アプリ内に保存される情報</h3>
       <p>
@@ -350,7 +362,11 @@
         <li>Google Play Billing: Androidのアプリ内購入処理</li>
         <li>Apple App Store / StoreKit: iOSのアプリ内購入処理</li>
         <li>Google Mobile Ads / AdMob: 任意のリワード広告およびその他の広告提供</li>
-        <li>Firebase Remote Config / Firebase Installations: アプリ設定、機能フラグ、運営メッセージの提供</li>
+        <li>Google User Messaging Platform: 広告同意およびプライバシー選択通知の支援</li>
+        <li>Unity Ads mediation: AdMobメディエーションを通じた広告配信の支援</li>
+        <li>Firebase Remote Config / Firebase Installations: アプリ設定、機能フラグ、広告制限、報酬設定、運営メッセージの提供</li>
+        <li>Firebase Analytics / Google Analytics for Firebase: 有効化されている場合のアプリ利用および運用指標の測定</li>
+        <li>Firebase Crashlytics: クラッシュおよびエラー診断</li>
         <li>UnityサービスおよびUnityランタイム構成要素: ゲーム運用およびプラットフォーム連携</li>
         <li>Google Play、Apple、Android、iOSのプラットフォームサービス: インストールされたビルドの運用に必要なサービス</li>
       </ul>
@@ -395,6 +411,12 @@
         進行状況をリセットできます。永続的な購入記録は、Google Play、Apple、または関連する
         プラットフォーム提供者のポリシーに従って保存される場合があります。
       </p>
+      <p>
+        削除依頼の対象には、ローカルのゲーム進行状況、設定、プライバシー通知への同意状態、
+        広告および分析SDKによって処理される識別子に関する案内が含まれる場合があります。法令遵守、
+        決済、セキュリティ、または不正防止のために必要な記録は、適用法令またはプラットフォーム
+        ポリシーで必要な期間保存される場合があります。
+      </p>
 
       <h3>児童および年齢要件</h3>
       <p>
@@ -417,8 +439,10 @@
       <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
       <li><a href="https://policies.google.com/technologies/ads">Google Advertising Privacy &amp; Terms</a></li>
       <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure guidance</a></li>
+      <li><a href="https://developers.google.com/admob/unity/privacy">Google User Messaging Platform for Unity</a></li>
       <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
       <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></li>
+      <li><a href="https://developer.apple.com/app-store/app-privacy-details/">Apple App Privacy Details</a></li>
       <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
     </ul>
   </main>
