@@ -91,18 +91,59 @@
     section[lang] {
       scroll-margin-top: 16px;
     }
+
+    .deletion-box {
+      margin: 24px 0 32px;
+      padding: 20px;
+      border: 1px solid #c99a4b;
+      background: #fffaf0;
+    }
+
+    .deletion-box h2 {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>LastCrown Privacy Policy</h1>
-    <p class="muted">Last updated: June 12, 2026</p>
+    <p class="muted">Last updated: July 31, 2026</p>
 
     <nav class="lang-nav" aria-label="Language">
       <a href="#ko">한국어</a>
       <a href="#en">English</a>
       <a href="#ja">日本語</a>
     </nav>
+
+    <section id="account-deletion" class="deletion-box">
+      <h2>Account and data deletion / 계정 및 데이터 삭제 / アカウントとデータの削除</h2>
+      <p lang="ko">
+        앱의 <strong>설정 &gt; 계정 &gt; 계정 삭제 요청</strong>을 이용하거나,
+        LastCrown 앱 이름과 앱에 표시된 계정 ID를 포함해
+        <a href="mailto:pung0805@gmail.com?subject=LastCrown%20account%20deletion%20request">삭제 요청 이메일</a>을
+        보내주세요. 요청 확인 후 개발자가 관리하는 인증 계정, 클라우드 저장, 랭킹·대전 프로필과 우편
+        데이터를 삭제합니다. 법률, 결제 정산, 보안 또는 부정 이용 방지에 필요한 기록과 플랫폼 스토어의
+        구매 기록은 필요한 기간 동안 보관될 수 있습니다.
+      </p>
+      <p lang="en">
+        Use <strong>Settings &gt; Account &gt; Request account deletion</strong> in the app, or
+        <a href="mailto:pung0805@gmail.com?subject=LastCrown%20account%20deletion%20request">email a deletion request</a>
+        that includes the app name LastCrown and the account ID shown in the app. After verification,
+        developer-managed authentication, cloud-save, ranking, arena-profile, and inbox data will be
+        deleted. Records required for law, payment settlement, security, or fraud prevention—and
+        purchase records controlled by the platform store—may be retained as required.
+      </p>
+      <p lang="ja">
+        アプリの<strong>設定 &gt; アカウント &gt; アカウント削除を依頼</strong>を使用するか、
+        アプリ名 LastCrown とアプリに表示されるアカウントIDを含めて
+        <a href="mailto:pung0805@gmail.com?subject=LastCrown%20account%20deletion%20request">削除依頼メール</a>を
+        送信してください。確認後、開発者が管理する認証アカウント、クラウド保存、ランキング・対戦プロフィール、
+        受信箱データを削除します。法令、決済、セキュリティ、不正防止に必要な記録およびストアが管理する
+        購入記録は、必要な期間保持される場合があります。
+      </p>
+    </section>
 
     <section id="ko" lang="ko">
       <h2>개인정보처리방침</h2>
@@ -120,8 +161,8 @@
       <p>
         회원탈퇴 또는 데이터 삭제 요청이 필요한 경우, 요청 내용과 LastCrown 앱 이름을 포함하여
         <a href="mailto:pung0805@gmail.com">pung0805@gmail.com</a>으로 이메일을 보내주시기 바랍니다.
-        LastCrown은 앱 내 계정을 제공하지 않으므로 별도의 계정 탈퇴 절차는 없으며, 요청을 받으면
-        삭제 가능한 개발자 관리 데이터의 삭제 방법을 안내합니다.
+        Google Play Games 또는 Apple 로그인을 선택하면 Firebase 인증 계정이 연결되며, 앱의
+        설정 &gt; 계정 화면에서도 계정 삭제를 요청할 수 있습니다.
       </p>
 
       <h3>앱 안에 저장되는 정보</h3>
@@ -129,6 +170,15 @@
         LastCrown은 게임 진행 상황을 저장하고 복원하기 위해 일부 게임 데이터를 사용자의 기기에 로컬로
         저장합니다. 여기에는 스테이지 진행, 재화, 장비, 보상 상태, 구매 권한 상태, 광고 보상 횟수와
         대기 시간, 일일 보상 상태, 설정, 개인정보 안내 동의 상태가 포함될 수 있습니다.
+      </p>
+
+      <h3>플랫폼 계정 및 온라인 정보</h3>
+      <p>
+        사용자가 Google Play Games 또는 Apple 로그인을 선택하면 플랫폼 플레이어 식별자, Firebase 사용자
+        식별자와 표시 이름이 계정 연결, 클라우드 저장, 랭킹 및 대전 기능에 사용될 수 있습니다. 온라인
+        데이터에는 클라우드 게임 진행, 현재·도달 스테이지, 전투력, 타임어택 기록, 공개 편성, 대전 결과와
+        게임 내 우편이 포함될 수 있습니다. 게스트 플레이는 가능하며 온라인 경쟁 기능에는 플랫폼 로그인이
+        필요할 수 있습니다.
       </p>
 
       <h3>제3자 서비스</h3>
@@ -146,6 +196,8 @@
         <li>Firebase Remote Config / Firebase Installations: 앱 설정값, 기능 플래그, 광고 제한, 보상 설정, 운영 메시지 제공</li>
         <li>Firebase Analytics / Google Analytics for Firebase: 앱 사용 및 운영 지표 측정(활성화된 경우)</li>
         <li>Firebase Crashlytics: 충돌 및 오류 진단</li>
+        <li>Firebase Authentication / Cloud Firestore: 계정 연결, 클라우드 저장, 랭킹, 대전 및 우편 데이터 제공</li>
+        <li>Google Play Games Services: Android 로그인, 플레이어 식별 및 게임 서비스 연동</li>
         <li>Unity 서비스 및 Unity 런타임 구성 요소: 게임 운영 및 플랫폼 연동</li>
         <li>Google Play, Apple, Android, iOS 플랫폼 서비스: 설치된 빌드 운영에 필요한 서비스</li>
       </ul>
@@ -154,6 +206,7 @@
       <ul>
         <li>게임 기능 제공 및 유지</li>
         <li>게임 진행 저장 및 복원</li>
+        <li>계정 연결, 클라우드 저장, 랭킹, 대전 및 게임 내 우편 제공</li>
         <li>구매 처리 및 영구 권한 복원</li>
         <li>선택형 보상형 광고 및 광고 기반 기능 제공</li>
         <li>대기 시간, 일일 제한, 보상 수령 가능 여부 관리</li>
@@ -190,9 +243,10 @@
         구매 기록은 Google Play, Apple 또는 관련 플랫폼 제공업체의 정책에 따라 보관될 수 있습니다.
       </p>
       <p>
-        삭제 요청 시 삭제되거나 안내되는 데이터에는 로컬 게임 진행 데이터, 설정, 개인정보 안내 동의 상태,
-        광고 및 분석 SDK와 관련된 식별자 처리 안내가 포함될 수 있습니다. 법률 준수, 정산, 보안, 부정 사용
-        방지를 위해 필요한 기록은 관련 법령 또는 플랫폼 정책에 따라 필요한 기간 동안 보관될 수 있습니다.
+        확인된 계정 삭제 요청에는 개발자가 관리하는 Firebase 인증 계정, 클라우드 저장, 랭킹·대전 프로필,
+        대전 기록과 게임 내 우편이 포함됩니다. 기기에만 있는 로컬 데이터는 앱의 진행 초기화, 앱 데이터 삭제
+        또는 앱 제거로 삭제할 수 있습니다. 법률 준수, 정산, 보안, 부정 사용 방지를 위해 필요한 기록은 관련
+        법령 또는 플랫폼 정책에 따라 필요한 기간 동안 보관될 수 있습니다.
       </p>
 
       <h3>아동 및 연령 요건</h3>
@@ -226,9 +280,9 @@
       <p>
         To request account withdrawal or data deletion, email
         <a href="mailto:pung0805@gmail.com">pung0805@gmail.com</a> and include the request details
-        and the app name, LastCrown. LastCrown does not provide in-app account creation, so there is
-        no separate account withdrawal process. After receiving a request, the developer will provide
-        instructions for deleting data that can be managed by the developer.
+        and the app name, LastCrown. Choosing Google Play Games or Apple sign-in links a Firebase
+        authentication account. You can also initiate an account-deletion request from
+        Settings &gt; Account in the app.
       </p>
 
       <h3>Information Stored In The App</h3>
@@ -237,6 +291,15 @@
         progress. This may include game progress, stage progress, currencies, equipment, rewards,
         purchase entitlement state, ad reward counters, cooldowns, daily reward state, settings, and
         privacy notice acceptance state.
+      </p>
+
+      <h3>Platform Account And Online Information</h3>
+      <p>
+        If you choose Google Play Games or Apple sign-in, a platform player identifier, Firebase user
+        identifier, and display name may be used for account linking, cloud save, ranking, and arena.
+        Online data may include cloud gameplay progress, current and highest stage, combat power,
+        time-attack records, public formations, arena results, and in-game inbox messages. Guest play
+        remains available, although online competition features may require platform sign-in.
       </p>
 
       <h3>Third-Party Services</h3>
@@ -255,6 +318,8 @@
         <li>Firebase Remote Config / Firebase Installations, for app settings, feature flags, ad limits, reward settings, and operational messages.</li>
         <li>Firebase Analytics / Google Analytics for Firebase, for app usage and operational measurement where enabled.</li>
         <li>Firebase Crashlytics, for crash and error diagnostics.</li>
+        <li>Firebase Authentication / Cloud Firestore, for account linking, cloud saves, ranking, arena, and inbox data.</li>
+        <li>Google Play Games Services, for Android sign-in, player identification, and game-service integration.</li>
         <li>Unity services and Unity runtime components, for game operation and platform integration.</li>
         <li>Google Play, Apple, Android, and iOS platform services required by the installed build.</li>
       </ul>
@@ -263,6 +328,7 @@
       <ul>
         <li>Provide and maintain game functionality.</li>
         <li>Save and restore game progress.</li>
+        <li>Provide account linking, cloud saves, ranking, arena, and in-game inbox features.</li>
         <li>Process purchases and restore durable entitlements.</li>
         <li>Provide optional rewarded ads and other ad-supported features.</li>
         <li>Enforce cooldowns, daily limits, and reward eligibility.</li>
@@ -302,10 +368,11 @@
         according to their policies.
       </p>
       <p>
-        Data covered by a deletion request may include local gameplay progress, settings, privacy
-        notice acceptance state, and guidance related to identifiers processed by advertising and
-        analytics SDKs. Records required for legal compliance, settlement, security, or fraud
-        prevention may be retained for the period required by applicable law or platform policy.
+        A verified account-deletion request covers the Firebase authentication account, cloud save,
+        ranking and arena profiles, battle records, and in-game inbox data managed by the developer.
+        Device-only local data can be removed by resetting progress, clearing app data, or uninstalling
+        the app. Records required for legal compliance, settlement, security, or fraud prevention may
+        be retained for the period required by applicable law or platform policy.
       </p>
 
       <h3>Children And Age Requirements</h3>
@@ -341,8 +408,8 @@
       <p>
         アカウント削除またはデータ削除を希望する場合は、依頼内容とアプリ名 LastCrown を含めて
         <a href="mailto:pung0805@gmail.com">pung0805@gmail.com</a> までメールでご連絡ください。
-        LastCrownはアプリ内アカウント作成を提供していないため、個別のアカウント退会手続きは
-        ありません。依頼を受け取った後、開発者が管理可能なデータの削除方法を案内します。
+        Google Play GamesまたはAppleログインを選択するとFirebase認証アカウントが連携されます。
+        アプリの設定 &gt; アカウント画面からもアカウント削除を依頼できます。
       </p>
 
       <h3>アプリ内に保存される情報</h3>
@@ -350,6 +417,15 @@
         LastCrownは、ゲームの進行状況を保存し復元するために、一部のゲームデータを利用者の端末に
         ローカル保存します。これには、ステージ進行、通貨、装備、報酬状態、購入権限の状態、広告報酬の
         回数と待機時間、デイリー報酬の状態、設定、プライバシー通知への同意状態が含まれる場合があります。
+      </p>
+
+      <h3>プラットフォームアカウントとオンライン情報</h3>
+      <p>
+        Google Play GamesまたはAppleログインを選択した場合、プラットフォームのプレイヤー識別子、
+        Firebaseユーザー識別子、表示名が、アカウント連携、クラウド保存、ランキング、対戦に使用される
+        場合があります。オンラインデータには、クラウド進行状況、現在・最高ステージ、戦闘力、
+        タイムアタック記録、公開編成、対戦結果、ゲーム内受信箱が含まれる場合があります。ゲストプレイは
+        引き続き利用できますが、オンライン競争機能にはプラットフォームログインが必要な場合があります。
       </p>
 
       <h3>第三者サービス</h3>
@@ -367,6 +443,8 @@
         <li>Firebase Remote Config / Firebase Installations: アプリ設定、機能フラグ、広告制限、報酬設定、運営メッセージの提供</li>
         <li>Firebase Analytics / Google Analytics for Firebase: 有効化されている場合のアプリ利用および運用指標の測定</li>
         <li>Firebase Crashlytics: クラッシュおよびエラー診断</li>
+        <li>Firebase Authentication / Cloud Firestore: アカウント連携、クラウド保存、ランキング、対戦、受信箱データの提供</li>
+        <li>Google Play Games Services: Androidログイン、プレイヤー識別、ゲームサービス連携</li>
         <li>UnityサービスおよびUnityランタイム構成要素: ゲーム運用およびプラットフォーム連携</li>
         <li>Google Play、Apple、Android、iOSのプラットフォームサービス: インストールされたビルドの運用に必要なサービス</li>
       </ul>
@@ -375,6 +453,7 @@
       <ul>
         <li>ゲーム機能の提供および維持</li>
         <li>ゲーム進行状況の保存および復元</li>
+        <li>アカウント連携、クラウド保存、ランキング、対戦、ゲーム内受信箱の提供</li>
         <li>購入処理および永続的な権限の復元</li>
         <li>任意のリワード広告および広告ベース機能の提供</li>
         <li>待機時間、デイリー制限、報酬受け取り可否の管理</li>
@@ -412,10 +491,11 @@
         プラットフォーム提供者のポリシーに従って保存される場合があります。
       </p>
       <p>
-        削除依頼の対象には、ローカルのゲーム進行状況、設定、プライバシー通知への同意状態、
-        広告および分析SDKによって処理される識別子に関する案内が含まれる場合があります。法令遵守、
-        決済、セキュリティ、または不正防止のために必要な記録は、適用法令またはプラットフォーム
-        ポリシーで必要な期間保存される場合があります。
+        確認済みのアカウント削除依頼には、開発者が管理するFirebase認証アカウント、クラウド保存、
+        ランキング・対戦プロフィール、対戦記録、ゲーム内受信箱データが含まれます。端末内のみの
+        ローカルデータは、進行状況のリセット、アプリデータの削除、またはアンインストールで削除できます。
+        法令遵守、決済、セキュリティ、不正防止に必要な記録は、適用法令またはプラットフォームポリシーで
+        必要な期間保持される場合があります。
       </p>
 
       <h3>児童および年齢要件</h3>
