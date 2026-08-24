@@ -109,7 +109,7 @@
 <body>
   <main>
     <h1>LastCrown Privacy Policy</h1>
-    <p class="muted">Last updated: July 31, 2026</p>
+    <p class="muted">Last updated: August 24, 2026</p>
 
     <nav class="lang-nav" aria-label="Language">
       <a href="./support.html">Customer Support</a>
@@ -247,7 +247,10 @@
         확인된 계정 삭제 요청에는 개발자가 관리하는 Firebase 인증 계정, 클라우드 저장, 랭킹·대전 프로필,
         대전 기록과 게임 내 우편이 포함됩니다. 기기에만 있는 로컬 데이터는 앱의 진행 초기화, 앱 데이터 삭제
         또는 앱 제거로 삭제할 수 있습니다. 법률 준수, 정산, 보안, 부정 사용 방지를 위해 필요한 기록은 관련
-        법령 또는 플랫폼 정책에 따라 필요한 기간 동안 보관될 수 있습니다.
+        법령 또는 플랫폼 정책에 따라 필요한 기간 동안 보관될 수 있습니다. 삭제 도중 이미 승인된 이전 요청이
+        데이터를 다시 만들지 못하도록 계정 식별자와 삭제 요청 토큰 발급 시각만 포함하는 보안 가드는 생성
+        2시간 뒤 만료되도록 설정합니다. 만료된 기록은 서비스 제공업체의 TTL 처리 일정에 따라 보통 만료 후
+        24시간 이내에 삭제됩니다.
       </p>
 
       <h3>아동 및 연령 요건</h3>
@@ -374,7 +377,11 @@
         ranking and arena profiles, battle records, and in-game inbox data managed by the developer.
         Device-only local data can be removed by resetting progress, clearing app data, or uninstalling
         the app. Records required for legal compliance, settlement, security, or fraud prevention may
-        be retained for the period required by applicable law or platform policy.
+        be retained for the period required by applicable law or platform policy. To prevent an
+        already-authorized request from recreating data during deletion, a security guard containing
+        only the account identifier and deletion-request token issue time is set to expire two hours
+        after creation. The service provider's TTL process typically deletes the expired record within
+        24 hours after expiration.
       </p>
 
       <h3>Children And Age Requirements</h3>
@@ -497,7 +504,10 @@
         ランキング・対戦プロフィール、対戦記録、ゲーム内受信箱データが含まれます。端末内のみの
         ローカルデータは、進行状況のリセット、アプリデータの削除、またはアンインストールで削除できます。
         法令遵守、決済、セキュリティ、不正防止に必要な記録は、適用法令またはプラットフォームポリシーで
-        必要な期間保持される場合があります。
+        必要な期間保持される場合があります。削除中に承認済みの古いリクエストがデータを再作成することを
+        防ぐため、アカウント識別子と削除リクエストのトークン発行時刻だけを含むセキュリティガードは、
+        作成から2時間後に期限切れとなるよう設定します。期限切れの記録は、サービス提供者のTTL処理により、
+        通常は期限切れ後24時間以内に削除されます。
       </p>
 
       <h3>児童および年齢要件</h3>
